@@ -6,14 +6,9 @@ This is first project with Astro. I'm trying to learn it and I'm going to use it
 ## Integrations
 Here is some integrations that I'm going to use in this project:
 
-### Tailwind CSS
-https://docs.astro.build/en/guides/integrations-guide/tailwind/
-### MDX
-https://docs.astro.build/en/guides/integrations-guide/mdx/
-
-## Planing to add
-- [ ] SEO
-https://github.com/jonasmerlin/astro-seo
+- [x] Tailwind CSS https://docs.astro.build/en/guides/integrations-guide/tailwind/
+- [x] MDX https://docs.astro.build/en/guides/integrations-guide/mdx/
+- [ ] SEO https://github.com/jonasmerlin/astro-seo
 - [ ] Sitemap
 
 
