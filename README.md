@@ -11,6 +11,11 @@ https://docs.astro.build/en/guides/integrations-guide/tailwind/
 ### MDX
 https://docs.astro.build/en/guides/integrations-guide/mdx/
 
+## Planing to add
+- [ ] SEO
+https://github.com/jonasmerlin/astro-seo
+- [ ] Sitemap
+
 
 ## 🚀 Project Structure
 
