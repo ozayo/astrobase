@@ -8,6 +8,7 @@ Here is some integrations that I'm going to use in this project:
 
 - [x] Tailwind CSS https://docs.astro.build/en/guides/integrations-guide/tailwind/
 - [x] MDX https://docs.astro.build/en/guides/integrations-guide/mdx/
+- [x] Fontsource [Font doc](https://docs.astro.build/en/guides/fonts/) [Fontsource](https://fontsource.org/)
 - [ ] SEO https://github.com/jonasmerlin/astro-seo
 - [ ] Sitemap
 
