@@ -12,6 +12,16 @@ Here is some integrations that I'm going to use in this project:
 - [ ] SEO https://github.com/jonasmerlin/astro-seo
 - [ ] Sitemap
 
+## Components
+Here is some components that I'm going to use in this project:
+
+- [ ] Navbar
+- [ ] Footer
+- [ ] Hero
+- [ ] Card
+- [ ] Button
+- [ ] Logos
+
 
 ## 🚀 Project Structure
 
