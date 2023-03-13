@@ -1,0 +1,45 @@
+---
+import Container from "../components/container.astro";
+import Logo from "../components/logo.astro";
+---
+
+<Container>
+  <header class="flex flex-row items-center justify-between my-5">
+    <div class="logo">
+      <Logo />
+    </div>
+    <div class="desknav">
+      <a
+        class="text-base font-medium mr-1 ml-1 hover:underline"
+        href="/"
+        class="text-lg font-medium">Home</a
+      >
+      <a
+        class="text-base font-medium mr-1 ml-1 hover:underline"
+        href="/about"
+        class="text-lg font-medium">About</a
+      >
+      <a
+        class="text-base font-medium mr-1 ml-1 hover:underline"
+        href="/about"
+        class="text-lg font-medium">Services</a
+      >
+      <a
+        class="text-base font-medium mr-1 ml-1 hover:underline"
+        href="/about"
+        class="text-lg font-medium">Price</a
+      >
+      <a
+        class="text-base font-medium mr-1 ml-1 hover:underline"
+        href="/about"
+        class="text-lg font-medium">Contact</a
+      >
+    </div>
+    <div class="">
+      <a href="/login" class="text-lg font-medium">Login</a>
+      <a href="/signup" class="text-lg font-medium">Sign Up</a>
+    </div>
+  </header>
+</Container>
+
+<style></style>

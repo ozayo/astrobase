@@ -1,0 +1,14 @@
+---
+import { Image } from "@astrojs/image/components";
+import logoImage from "../assets/logoipsum-211.svg";
+---
+
+<a href="/" rel="noopener">
+  <Image
+    class="hover:animate-pulse"
+    src={logoImage}
+    width={180}
+    height={48}
+    alt="Logo"
+  />
+</a>

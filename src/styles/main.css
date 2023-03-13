@@ -1,0 +1,31 @@
+/* The integration's default injected base.css file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  @apply text-4xl lg:text-5xl xl:text-6xl font-bold lg:tracking-tight xl:tracking-tighter;
+}
+
+h2 {
+  @apply text-3xl lg:text-4xl xl:text-5xl font-bold lg:tracking-tight xl:tracking-tighter;
+}
+
+h3 {
+  @apply text-2xl lg:text-3xl xl:text-4xl font-bold lg:tracking-tight xl:tracking-tighter;
+}
+
+h4 {
+  @apply text-xl lg:text-2xl xl:text-3xl font-bold lg:tracking-tight xl:tracking-tighter;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @apply text-gray-900 mt-3 mb-4;
+}
+
+body {
+  @apply text-base font-extralight text-slate-700;
+}
