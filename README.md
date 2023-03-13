@@ -4,24 +4,27 @@ Hi! 👋
 This is first project with Astro. I'm trying to learn it and I'm going to use it for my test website.
 
 ## Integrations
+
 Here is some integrations that I'm going to use in this project:
 
 - [x] Tailwind CSS https://docs.astro.build/en/guides/integrations-guide/tailwind/
 - [x] MDX https://docs.astro.build/en/guides/integrations-guide/mdx/
 - [x] Fontsource [Font doc](https://docs.astro.build/en/guides/fonts/), [Fontsource](https://fontsource.org/)
+- [x] @astrojs/image [Astro image](https://docs.astro.build/en/guides/integrations-guide/image/)
+- [x] Astro-Icons [Astro icons](https://github.com/natemoo-re/astro-icon)
 - [ ] SEO https://github.com/jonasmerlin/astro-seo
 - [ ] Sitemap
 
 ## Components
+
 Here is some components that I'm going to use in this project:
 
 - [ ] Navbar
-- [ ] Footer
+- [x] Footer
 - [ ] Hero
 - [ ] Card
 - [ ] Button
 - [ ] Logos
-
 
 ## 🚀 Project Structure
 
