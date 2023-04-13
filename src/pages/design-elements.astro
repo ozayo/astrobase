@@ -1,0 +1,87 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Container from "../components/container.astro";
+import Button from "../components/button.astro";
+import { Icon } from "astro-icon";
+---
+
+<Layout title="Design elements.">
+  <Container>
+    <div class="mt-20">
+      <h1>Some content about Astro and H1</h1>
+      <p>
+        The Astro create script will ask a few questions, like where to install
+        and what template to use. Feel free to use whatever suits you most, I
+        tend to mostly choose the minimal template since I don’t like
+        boilerplate.
+      </p>
+      <p>
+        After installing Tailwind, we’ll need to add the Tailwind configuration
+        file by running npx tailwindcss init or by adding the tailwind.config.js
+        file manually in the root of the project and adding following content:
+      </p>
+
+      <h2>Some content about Astro and H2</h2>
+      <p>
+        The Astro create script will ask a few questions, like where to install
+        and what template to use. Feel free to use whatever suits you most, I
+        tend to mostly choose the minimal template since I don’t like
+        boilerplate.
+      </p>
+      <p>
+        After installing Tailwind, we’ll need to add the Tailwind configuration
+        file by running npx tailwindcss init or by adding the tailwind.config.js
+        file manually in the root of the project and adding following content:
+      </p>
+      <h3>Some content about Astro and H3</h3>
+      <p>
+        The Astro create script will ask a few questions, like where to install
+        and what template to use. Feel free to use whatever suits you most, I
+        tend to mostly choose the minimal template since I don’t like
+        boilerplate. <br /> Astro create script will ask a few questions, like where
+        to install and what template to use. Feel free to use whatever suits you
+        most, I tend to mostly choose the minimal template since I don’t like boilerplate.
+      </p>
+      <p>
+        After installing Tailwind, we’ll need to add the Tailwind configuration
+        file by running npx tailwindcss init or by adding the tailwind.config.js
+        file manually in the root of the project and adding following content:
+      </p>
+      <h4>Some content about Astro and H4</h4>
+      <p>
+        The Astro create script will ask a few questions, like where to install
+        and what template to use. Feel free to use whatever suits you most, I
+        tend to mostly choose the minimal template since I don’t like
+        boilerplate.
+      </p>
+      <p>
+        After installing Tailwind, we’ll need to add the Tailwind configuration
+        file by running npx tailwindcss init or by adding the tailwind.config.js
+        file manually in the root of the project and adding following content:
+      </p>
+
+      <div class="mt-10 bg-gray-200 p-5">
+        <h4>Button sample</h4>
+        <p>Button sample from button.asto component</p>
+        <Button
+          size="lg"
+          style="primary"
+          size="lg"
+          class="mt-10 flex items-center justify-between"
+        >
+          <Icon pack="charm" name="at-sign" width="15px" /> Some text
+        </Button>
+
+        <Button
+          size="lg"
+          style="outline"
+          size="md"
+          class="mt-10 flex items-center justify-between"
+        >
+          <Icon pack="charm" name="at-sign" width="15px" /> Some text
+        </Button>
+      </div>
+    </div>
+  </Container>
+</Layout>
+<style></style>

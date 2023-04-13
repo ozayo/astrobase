@@ -1,6 +1,8 @@
 ---
 import Container from "../components/container.astro";
 import Logo from "../components/logo.astro";
+import { Icon } from "astro-icon";
+import Link from "../components/link.astro";
 ---
 
 <Container>
@@ -9,37 +11,36 @@ import Logo from "../components/logo.astro";
       <Logo />
     </div>
     <div class="desknav">
-      <a
-        class="text-base font-medium mr-1 ml-1 hover:underline"
-        href="/"
-        class="text-lg font-medium">Home</a
-      >
-      <a
-        class="text-base font-medium mr-1 ml-1 hover:underline"
-        href="/about"
-        class="text-lg font-medium">About</a
-      >
-      <a
-        class="text-base font-medium mr-1 ml-1 hover:underline"
-        href="/about"
-        class="text-lg font-medium">Services</a
-      >
-      <a
-        class="text-base font-medium mr-1 ml-1 hover:underline"
-        href="/about"
-        class="text-lg font-medium">Price</a
-      >
-      <a
-        class="text-base font-medium mr-1 ml-1 hover:underline"
-        href="/about"
-        class="text-lg font-medium">Contact</a
-      >
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/about">Services</a>
+      <a href="/about">Price</a>
+      <a href="/about">Contact</a>
+      <a href="/design-elements">Design</a>
     </div>
-    <div class="">
-      <a href="/login" class="text-lg font-medium">Login</a>
-      <a href="/signup" class="text-lg font-medium">Sign Up</a>
+    <div class="flex flex-row items-center justify-between">
+      <Link
+        href="/login"
+        style="outline"
+        size="md"
+        class="mr-2 flex gap-1 items-center justify-center"
+      >
+        <Icon class="text-black w-5 h-5" name="ic:baseline-person-outline" /> Login
+      </Link>
+      <Link
+        href="/signup"
+        style="primary"
+        size="md"
+        class="flex gap-1 items-center justify-center"
+      >
+        <Icon class="text-white w-4 h-4" name="ic:outline-https" />Sign Up
+      </Link>
     </div>
   </header>
 </Container>
 
-<style></style>
+<style>
+  .desknav a {
+    @apply text-black text-base font-medium mr-1 ml-1 pl-2 pr-2 hover:underline hover:text-slate-500;
+  }
+</style>

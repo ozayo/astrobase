@@ -27,5 +27,8 @@ h4 {
 }
 
 body {
-  @apply text-base font-extralight text-slate-700;
+  @apply text-base font-extralight text-slate-800 subpixel-antialiased;
+}
+p {
+  @apply mt-3 mb-3;
 }
