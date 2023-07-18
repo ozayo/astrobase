@@ -1,11 +1,13 @@
 # Astro Starter
 
 Hi! 👋
-This is first project with Astro. I'm trying to learn it and I'm going to use it for my test website.
+This is my first project with AstroBuild.
+I've been trying to find time to try it for a long time.
+Let's get started.
 
 ## Integrations
 
-Here is some integrations that I'm going to use in this project:
+Here are some integrations that I'm going to use in this project:
 
 - [x] Tailwind CSS https://docs.astro.build/en/guides/integrations-guide/tailwind/
 - [x] MDX https://docs.astro.build/en/guides/integrations-guide/mdx/
@@ -17,7 +19,7 @@ Here is some integrations that I'm going to use in this project:
 
 ## Components
 
-Here is some components that I'm going to use in this project:
+Some components that I'm going to use in this project:
 
 - [ ] Navbar
 - [x] Footer
