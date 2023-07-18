@@ -28,6 +28,10 @@ Some components that I'm going to use in this project:
 - [ ] Button
 - [ ] Logos
 
+## Some goals
+
+- [ ] Add a blog with use Asto Content Collections
+
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
@@ -37,11 +41,16 @@ Inside of your Astro project, you'll see the following folders and files:
 ├── public/
 │   └── favicon.svg
 ├── src/
+│   ├── assets/
 │   ├── components/
 │   │   └── Card.astro
+│   ├── content/
+│   │   └── blog
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
+│       └── about.astro
+│       └── design-elements.astro
 │       └── index.astro
 └── package.json
 ```
