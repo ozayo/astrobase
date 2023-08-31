@@ -8,6 +8,7 @@ Let's get started.
 ## Upgrades to Astro 3.0
 
 Project was upgraded to Astro 3.0.0. I've removed Astro Image.
+[Upgrade guide to v3](https://docs.astro.build/en/guides/upgrade-to/v3/)
 
 ## Integrations
 
