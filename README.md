@@ -5,6 +5,10 @@ This is my first project with AstroBuild.
 I've been trying to find time to try it for a long time.
 Let's get started.
 
+## Upgrades to Astro 3.0
+
+Project was upgraded to Astro 3.0.0. I've removed Astro Image.
+
 ## Integrations
 
 Here are some integrations that I'm going to use in this project:
@@ -12,7 +16,7 @@ Here are some integrations that I'm going to use in this project:
 - [x] Tailwind CSS https://docs.astro.build/en/guides/integrations-guide/tailwind/
 - [x] MDX https://docs.astro.build/en/guides/integrations-guide/mdx/
 - [x] Fontsource [Font doc](https://docs.astro.build/en/guides/fonts/), [Fontsource](https://fontsource.org/)
-- [x] @astrojs/image [Astro image](https://docs.astro.build/en/guides/integrations-guide/image/)
+- [x] @astrojs/image [Astro image](https://docs.astro.build/en/guides/integrations-guide/image/) (Removed with Astro 3.0)
 - [x] Astro-Icons [Astro icons](https://github.com/natemoo-re/astro-icon)
 - [ ] SEO https://github.com/jonasmerlin/astro-seo
 - [ ] Sitemap
