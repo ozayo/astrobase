@@ -19,6 +19,7 @@ Here are some integrations that I'm going to use in this project:
 - [x] Fontsource [Font doc](https://docs.astro.build/en/guides/fonts/), [Fontsource](https://fontsource.org/)
 - [x] @astrojs/image [Astro image](https://docs.astro.build/en/guides/integrations-guide/image/) (Removed with Astro 3.0)
 - [x] Astro-Icons [Astro icons](https://github.com/natemoo-re/astro-icon)
+- [x] Daisy UI [Daisy UI](https://daisyui.com/)
 - [ ] SEO https://github.com/jonasmerlin/astro-seo
 - [ ] Sitemap
 
