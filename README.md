@@ -7,7 +7,7 @@ Let's get started.
 
 ## Upgrades to Astro 3.0
 
-Project was upgraded to Astro 3.0.0. I've removed Astro Image.
+Project was upgraded to Astro 3.6.4. I've removed Astro Image.
 [Upgrade guide to v3](https://docs.astro.build/en/guides/upgrade-to/v3/)
 
 ## Integrations
@@ -27,12 +27,12 @@ Here are some integrations that I'm going to use in this project:
 
 Some components that I'm going to use in this project:
 
-- [ ] Navbar
+- [x] Navbar
 - [x] Footer
-- [ ] Hero
-- [ ] Card
-- [ ] Button
-- [ ] Logos
+- [x] Hero
+- [x] Card
+- [x] Button
+- [x] Logos
 
 ## Some goals
 

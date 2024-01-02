@@ -7,40 +7,49 @@ import Link from "../components/link.astro";
 
 <Container>
   <header class="flex flex-row items-center justify-between my-5">
-    <div class="logo">
-      <Logo />
-    </div>
-    <div class="desknav">
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/about">Services</a>
-      <a href="/about">Price</a>
-      <a href="/about">Contact</a>
-      <a href="/design-elements">Design</a>
-    </div>
-    <div class="flex flex-row items-center justify-between">
-      <Link
-        href="/login"
-        style="outline"
-        size="md"
-        class="mr-2 flex gap-1 items-center justify-center"
-      >
-        <Icon class="text-black w-5 h-5" name="ic:baseline-person-outline" /> Login
-      </Link>
-      <Link
-        href="/signup"
-        style="primary"
-        size="md"
-        class="flex gap-1 items-center justify-center"
-      >
-        <Icon class="text-white w-4 h-4" name="ic:outline-https" />Sign Up
-      </Link>
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/about">Services</a></li>
+            <li><a href="/about">Price</a></li>
+            <li><a href="/about">Contact</a></li>
+            <li><a href="/design-elements">Design</a></li>
+          </ul>
+        </div>
+        <Logo />
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/about">Services</a></li>
+            <li><a href="/about">Price</a></li>
+            <li><a href="/about">Contact</a></li>
+            <li><a href="/design-elements">Design</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <Link href="/login" style="outline" size="md" class="mr-2 flex gap-1 items-center justify-center">
+          <Icon class="text-black w-5 h-5" name="ic:baseline-person-outline" /> Login
+        </Link>
+        <Link href="/signup" style="primary" size="md" class="flex gap-1 items-center justify-center">
+          <Icon class="text-white w-4 h-4" name="ic:outline-https" />Sign Up
+        </Link>
+      </div>
     </div>
   </header>
 </Container>
 
 <style>
-  .desknav a {
-    @apply text-black text-base font-medium mr-1 ml-1 pl-2 pr-2 hover:underline hover:text-slate-500;
+  li a {
+    @apply text-black text-base font-medium hover:text-slate-500;
   }
 </style>
+
+
