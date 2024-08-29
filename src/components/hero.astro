@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import HeroPic from "../assets/pexels-pixabay-262488.jpeg";
-import { Icon } from "astro-icon";
+import { Icon } from 'astro-icon/components'
 import Link from "../components/link.astro";
 ---
 
@@ -13,7 +13,7 @@ import Link from "../components/link.astro";
     <!-- <Image src={HeroPic} width={600} alt="descriptive text" /> -->
     <Image
       src={HeroPic}
-      alt="Astronaut in the air"
+      alt="Astronaut in the air"§
       width={600}
       sizes="(max-width: 800px) 100vw, 620px"
       loading="eager"
@@ -21,7 +21,6 @@ import Link from "../components/link.astro";
     />
   </div>
   <div>
-    <!-- <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter"> -->
     <h1>
       Another website <br /><span
         class="underline decoration-wavy decoration-2 underline-offset-4 decoration-red-800"
@@ -43,7 +42,7 @@ import Link from "../components/link.astro";
         class="flex gap-1 items-center justify-center"
         rel="noopener"
       >
-        <Icon class="text-white w-5 h-5" name="mdi:code-braces-box" />
+        <Icon name="mdi:code-tags"/>
         About the project
       </Link>
       <Link
@@ -54,7 +53,7 @@ import Link from "../components/link.astro";
         class="flex gap-1 items-center justify-center"
         target="_blank"
       >
-        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
+        <Icon name="mdi:github"/>
         GitHub Repo
       </Link>
     </div>

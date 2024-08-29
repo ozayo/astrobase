@@ -1,13 +1,14 @@
 ---
 import Container from "../components/container.astro";
 import Logo from "../components/logo.astro";
-import { Icon } from "astro-icon";
+import { Icon } from 'astro-icon/components'
 import Link from "../components/link.astro";
+import Toggle from "../components/toggle.astro";
 ---
 
 <Container>
   <header class="flex flex-row items-center justify-between my-5">
-    <div class="navbar bg-base-100">
+    <div class="navbar">
       <div class="navbar-start">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -33,13 +34,16 @@ import Link from "../components/link.astro";
             <li><a href="/about">Contact</a></li>
             <li><a href="/design-elements">Design</a></li>
         </ul>
+<Toggle />
+</label>
       </div>
       <div class="navbar-end">
         <Link href="/login" style="outline" size="md" class="mr-2 flex gap-1 items-center justify-center">
-          <Icon class="text-black w-5 h-5" name="ic:baseline-person-outline" /> Login
+          <Icon name="mdi:account" /> Login
         </Link>
         <Link href="/signup" style="primary" size="md" class="flex gap-1 items-center justify-center">
-          <Icon class="text-white w-4 h-4" name="ic:outline-https" />Sign Up
+          <Icon name="mdi:lock-outline"/>
+          Sign up
         </Link>
       </div>
     </div>

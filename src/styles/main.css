@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 h1 {
-  @apply text-4xl lg:text-5xl xl:text-6xl font-bold lg:tracking-tight xl:tracking-tighter;
+  @apply text-4xl lg:text-5xl xl:text-6xl font-bold lg:tracking-tight xl:tracking-tighter ;
 }
 
 h2 {
@@ -23,11 +23,15 @@ h1,
 h2,
 h3,
 h4 {
-  @apply text-gray-900 mt-3 mb-4;
+  @apply text-gray-900 mt-3 mb-4 dark:text-white;
+}
+
+:root, html, body {
+  @apply bg-slate-50 dark:bg-slate-900;
 }
 
 body {
-  @apply text-base font-extralight text-slate-800 subpixel-antialiased;
+  @apply text-base font-extralight text-slate-800 dark:text-white subpixel-antialiased;
 }
 p {
   @apply mt-3 mb-3;

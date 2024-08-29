@@ -5,10 +5,9 @@ This is my first project with AstroBuild.
 I've been trying to find time to try it for a long time.
 Let's get started.
 
-## Upgrades to Astro 3.0
+## Upgrades to Astro 4.0
 
-Project was upgraded to Astro 3.6.4. I've removed Astro Image.
-[Upgrade guide to v3](https://docs.astro.build/en/guides/upgrade-to/v3/)
+Project was upgraded to Astro 4.0.8.
 
 ## Integrations
 
