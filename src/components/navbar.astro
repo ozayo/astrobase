@@ -8,44 +8,57 @@ import Toggle from "../components/toggle.astro";
 
 <Container>
   <header class="flex flex-row items-center justify-between my-5">
-    <div class="navbar">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-          </div>
-          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/about">Services</a></li>
-            <li><a href="/about">Price</a></li>
-            <li><a href="/about">Contact</a></li>
-            <li><a href="/design-elements">Design</a></li>
-          </ul>
-        </div>
+    <div class="navbar flex w-full items-center justify-between">
+      <div class="navbar-start flex items-center">
         <Logo />
       </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/about">Services</a></li>
-            <li><a href="/about">Price</a></li>
-            <li><a href="/about">Contact</a></li>
-            <li><a href="/design-elements">Design</a></li>
+      <div class="navbar-center hidden lg:flex flex-1 justify-center">
+        <ul class="menu menu-horizontal px-1 flex space-x-4">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/price">Price</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/design-elements">Design</a></li>
         </ul>
-<Toggle />
-</label>
       </div>
-      <div class="navbar-end">
-        <Link href="/login" style="outline" size="md" class="mr-2 flex gap-1 items-center justify-center">
+      <div class="navbar-end hidden lg:flex items-center space-x-4">
+        <Link href="/login" style="outline" size="md" class="flex gap-1 items-center justify-center">
           <Icon name="mdi:account" /> Login
         </Link>
         <Link href="/signup" style="primary" size="md" class="flex gap-1 items-center justify-center">
           <Icon name="mdi:lock-outline"/>
           Sign up
         </Link>
+        <Toggle />
       </div>
+      <div class="lg:hidden">
+        <button id="menu-toggle" class="btn btn-ghost">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden">
+      <ul class="menu menu-vertical px-1">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/price">Price</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/design-elements">Design</a></li>
+        <li>
+          <Link href="/login" style="outline" size="md" class="mr-2 flex gap-1 items-center justify-center">
+            <Icon name="mdi:account" /> Login
+          </Link>
+        </li>
+        <li>
+          <Link href="/signup" style="primary" size="md" class="flex gap-1 items-center justify-center">
+            <Icon name="mdi:lock-outline"/>
+            Sign up
+          </Link>
+        </li>
+        <li><Toggle /></li>
+      </ul>
     </div>
   </header>
 </Container>
@@ -55,5 +68,12 @@ import Toggle from "../components/toggle.astro";
     @apply text-black text-base font-medium hover:text-slate-500;
   }
 </style>
+
+<script>
+  document.getElementById('menu-toggle').addEventListener('click', function() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
 
 
