@@ -1,13 +1,9 @@
+import defaultTheme from "tailwindcss/defaultTheme";
 
-
-const defaultTheme = require("tailwindcss/defaultTheme");
-
-module.exports = {
-  plugins: [
-    require('daisyui'),
-    require("tailwindcss"),
-  ],
+/** @type {import('tailwindcss').Config} */
+const config = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
@@ -15,6 +11,6 @@ module.exports = {
       },
     },
   },
-  darkMode: 'class',
-  // ...
 };
+
+export default config;

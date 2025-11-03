@@ -13,7 +13,7 @@ import Link from "../components/link.astro";
     <!-- <Image src={HeroPic} width={600} alt="descriptive text" /> -->
     <Image
       src={HeroPic}
-      alt="Astronaut in the air"§
+      alt="Astronaut in the air"
       width={600}
       sizes="(max-width: 800px) 100vw, 620px"
       loading="eager"
@@ -27,12 +27,12 @@ import Link from "../components/link.astro";
         >done</span
       > with
       <span
-        class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 pr-1"
-        >Astro 3.6.4
+        class="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-pink-600 pr-1"
+        >Astro 5.15.1
       </span>
     </h1>
-    <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      This website built with Astro.build and TailwindCSS. This is a template
+    <p class="text-lg mt-4 text-slate-600 dark:text-slate-400 max-w-2xl">
+      This website built with Astro.build and TailwindCSS v4. This is a template
       for startups, marketing websites & landing pages. You can quickly create
       any website with this starter.
     </p>
@@ -46,10 +46,9 @@ import Link from "../components/link.astro";
         About the project
       </Link>
       <Link
-        href="/home"
+        href="https://github.com/ozayo/astrobase"
         style="outline"
         rel="noopener"
-        href="https://github.com/ozayo/astrobase"
         class="flex gap-1 items-center justify-center"
         target="_blank"
       >

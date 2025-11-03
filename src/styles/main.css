@@ -1,38 +1,133 @@
-/* The integration's default injected base.css file */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Tailwind v4 entrypoint */
+@import "@fontsource/inter/200.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/700.css";
+@reference "tailwindcss";
+@import "tailwindcss";
+@plugin "daisyui";
 
-h1 {
-  @apply text-4xl lg:text-5xl xl:text-6xl font-bold lg:tracking-tight xl:tracking-tighter ;
-}
+@layer base {
+  h1 {
+    font-family: "InterVariable", "Inter", ui-sans-serif, system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 700;
+    font-size: 2.25rem; /* text-4xl */
+    line-height: 2.5rem;
+  }
 
-h2 {
-  @apply text-3xl lg:text-4xl xl:text-5xl font-bold lg:tracking-tight xl:tracking-tighter;
-}
+  h2 {
+    font-family: "InterVariable", "Inter", ui-sans-serif, system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 700;
+    font-size: 1.875rem; /* text-3xl */
+    line-height: 2.25rem;
+  }
 
-h3 {
-  @apply text-2xl lg:text-3xl xl:text-4xl font-bold lg:tracking-tight xl:tracking-tighter;
-}
+  h3 {
+    font-family: "InterVariable", "Inter", ui-sans-serif, system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem; /* text-2xl */
+    line-height: 2rem;
+  }
 
-h4 {
-  @apply text-xl lg:text-2xl xl:text-3xl font-bold lg:tracking-tight xl:tracking-tighter;
-}
+  h4 {
+    font-family: "InterVariable", "Inter", ui-sans-serif, system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem; /* text-xl */
+    line-height: 1.75rem;
+  }
 
-h1,
-h2,
-h3,
-h4 {
-  @apply text-gray-900 mt-3 mb-4 dark:text-white;
-}
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 3rem; /* text-5xl */
+      line-height: 1;
+      letter-spacing: -0.025em; /* tracking-tight */
+    }
+    h2 {
+      font-size: 2.25rem; /* text-4xl */
+      line-height: 2.5rem;
+      letter-spacing: -0.025em;
+    }
+    h3 {
+      font-size: 1.875rem; /* text-3xl */
+      line-height: 2.25rem;
+      letter-spacing: -0.025em;
+    }
+    h4 {
+      font-size: 1.5rem; /* text-2xl */
+      line-height: 2rem;
+      letter-spacing: -0.025em;
+    }
+  }
 
-:root, html, body {
-  @apply bg-slate-50 dark:bg-slate-900;
-}
+  @media (min-width: 1280px) {
+    h1 {
+      font-size: 3.75rem; /* text-6xl */
+      line-height: 1;
+      letter-spacing: -0.05em; /* tracking-tighter */
+    }
+    h2 {
+      font-size: 3rem; /* text-5xl */
+      line-height: 1;
+      letter-spacing: -0.05em;
+    }
+    h3 {
+      font-size: 2.25rem; /* text-4xl */
+      line-height: 2.5rem;
+      letter-spacing: -0.05em;
+    }
+    h4 {
+      font-size: 1.875rem; /* text-3xl */
+      line-height: 2.25rem;
+      letter-spacing: -0.05em;
+    }
+  }
 
-body {
-  @apply text-base font-extralight text-slate-800 dark:text-white subpixel-antialiased;
-}
-p {
-  @apply mt-3 mb-3;
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: rgb(17 24 39 / 1); /* slate-900 */
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  html.dark h1,
+  html.dark h2,
+  html.dark h3,
+  html.dark h4 {
+    color: rgb(255 255 255 / 1);
+  }
+
+  :root,
+  html,
+  body {
+    background-color: rgb(248 250 252 / 1); /* slate-50 */
+  }
+
+  html.dark,
+  html.dark body {
+    background-color: rgb(15 23 42 / 1); /* slate-900 */
+  }
+
+  body {
+    font-family: "InterVariable", "Inter", ui-sans-serif, system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: rgb(30 41 59 / 1); /* slate-800 */
+    -webkit-font-smoothing: antialiased;
+  }
+
+  html.dark body {
+    color: rgb(255 255 255 / 1);
+  }
+
+  p {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
 }

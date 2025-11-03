@@ -13,7 +13,7 @@ import Toggle from "../components/toggle.astro";
         <Logo />
       </div>
       <div class="navbar-center hidden lg:flex flex-1 justify-center">
-        <ul class="menu menu-horizontal px-1 flex space-x-4">
+        <ul class="flex space-x-6 px-1">
           <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/services">Services</a></li>
@@ -38,34 +38,48 @@ import Toggle from "../components/toggle.astro";
         </button>
       </div>
     </div>
-    <div id="mobile-menu" class="hidden lg:hidden">
-      <ul class="menu menu-vertical px-1">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/services">Services</a></li>
-        <li><a href="/price">Price</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/design-elements">Design</a></li>
-        <li>
-          <Link href="/login" style="outline" size="md" class="mr-2 flex gap-1 items-center justify-center">
+    <div id="mobile-menu" class="hidden lg:hidden mt-4">
+      <ul class="flex flex-col space-y-3 px-1 py-4 border-t border-gray-200 dark:border-gray-700">
+        <li><a href="/" class="block py-2">Home</a></li>
+        <li><a href="/about" class="block py-2">About</a></li>
+        <li><a href="/services" class="block py-2">Services</a></li>
+        <li><a href="/price" class="block py-2">Price</a></li>
+        <li><a href="/contact" class="block py-2">Contact</a></li>
+        <li><a href="/design-elements" class="block py-2">Design</a></li>
+        <li class="pt-2 border-t border-gray-200 dark:border-gray-700">
+          <Link href="/login" style="outline" size="md" class="w-full flex gap-1 items-center justify-center">
             <Icon name="mdi:account" /> Login
           </Link>
         </li>
         <li>
-          <Link href="/signup" style="primary" size="md" class="flex gap-1 items-center justify-center">
+          <Link href="/signup" style="primary" size="md" class="w-full flex gap-1 items-center justify-center">
             <Icon name="mdi:lock-outline"/>
             Sign up
           </Link>
         </li>
-        <li><Toggle /></li>
+        <li class="flex justify-center"><Toggle /></li>
       </ul>
     </div>
   </header>
 </Container>
 
 <style>
+  @import "tailwindcss";
   li a {
-    @apply text-black text-base font-medium hover:text-slate-500;
+    color: rgb(0 0 0 / 1); /* text-black */
+    font-size: 1rem; /* text-base */
+    font-weight: 500; /* font-medium */
+    transition: color 0.2s ease-in-out;
+  }
+  li a:hover {
+    color: rgb(100 116 139 / 1); /* text-slate-500 */
+  }
+
+  html.dark li a {
+    color: rgb(255 255 255 / 1);
+  }
+  html.dark li a:hover {
+    color: rgb(203 213 225 / 1); /* text-slate-300 */
   }
 </style>
 
@@ -75,5 +89,4 @@ import Toggle from "../components/toggle.astro";
     mobileMenu.classList.toggle('hidden');
   });
 </script>
-
 

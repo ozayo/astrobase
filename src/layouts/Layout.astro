@@ -11,7 +11,7 @@ const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html lang="en" class="light" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -27,27 +27,33 @@ const { title } = Astro.props;
 </html>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const toggleButton = document.getElementById('dark-mode-toggle');
-      const htmlElement = document.documentElement;
+  document.addEventListener("DOMContentLoaded", () => {
+    const htmlElement = document.documentElement;
+    const toggleButton = document.getElementById("dark-mode-toggle");
 
-      // Sayfa yüklendiğinde mevcut modu kontrol et ve uygula
-      const currentMode = localStorage.getItem('darkMode');
-      if (currentMode === 'enabled') {
-        htmlElement.classList.replace('light', 'dark');
-      } else {
-        htmlElement.classList.replace('dark', 'light');
-      }
+    const applyTheme = (mode: "enabled" | "disabled") => {
+      const isDark = mode === "enabled";
+      htmlElement.classList.toggle("dark", isDark);
+      htmlElement.classList.toggle("light", !isDark);
+      htmlElement.setAttribute("data-theme", isDark ? "dark" : "light");
+    };
 
-      toggleButton.addEventListener('click', function() {
-        const isDarkMode = htmlElement.classList.contains('dark');
-        if (isDarkMode) {
-          htmlElement.classList.replace('dark', 'light');
-          localStorage.setItem('darkMode', 'disabled'); // Dark mode devre dışı
-        } else {
-          htmlElement.classList.replace('light', 'dark');
-          localStorage.setItem('darkMode', 'enabled'); // Dark mode etkin
-        }
+    const storedMode = localStorage.getItem("darkMode");
+    if (storedMode === "enabled" || storedMode === "disabled") {
+      applyTheme(storedMode);
+    } else {
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      applyTheme(prefersDark ? "enabled" : "disabled");
+    }
+
+    if (toggleButton) {
+      toggleButton.addEventListener("click", () => {
+        const next: "enabled" | "disabled" = htmlElement.classList.contains("dark")
+          ? "disabled"
+          : "enabled";
+        applyTheme(next);
+        localStorage.setItem("darkMode", next);
       });
-    });
-  </script>
+    }
+  });
+</script>
