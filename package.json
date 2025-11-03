@@ -24,5 +24,8 @@
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.16",
     "daisyui": "^5.3.9"
+  },
+  "engines": {
+    "node": "22.x"
   }
 }
